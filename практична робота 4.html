@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог про розробку сучасних ігрових онлайн-магазинів та веб-дизайн.">
+    <meta name="keywords" content="веб-розробка, ігровий магазин, HTML5, CSS3, дизайн">
+    <meta name="author" content="Ваше Ім'я">
+    
+    <title>Блог розробника: Дизайн та Верстка</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>GamerWeb Dev</h1> 
+        </div>
+
+        <nav aria-label="Головне меню">
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#articles">Статті</a></li>
+                <li><a href="#projects">Проєкти</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <form action="/search" method="GET" role="search">
+            <label for="site-search" class="visually-hidden">Пошук по сайту:</label>
+            <input type="search" id="site-search" name="q" placeholder="Знайти статтю..." required>
+            <button type="submit">Шукати</button>
+        </form>
+    </header>
+
+    <main>
+        
+        <section id="articles" aria-labelledby="articles-title">
+            <h2 id="articles-title">Останні публікації</h2>
+
+            <article>
+                <header>
+                    <h3>Проєктування архітектури онлайн-магазину ігор</h3>
+                    <p>Опубліковано: <time datetime="2026-05-20">20 травня 2026</time></p>
+                </header>
+                <div class="article-content">
+                    <p>Створення зручного інтерфейсу для геймерів вимагає особливого підходу. Важливо враховувати темні теми, зручну навігацію та швидке завантаження карток товарів.</p>
+                    <p>Для зберігання даних користувачів та історії покупок необхідна надійна реляційна база даних, грамотно спроєктована за допомогою SQL.</p>
+                </div>
+                <footer>
+                    <p>Теги: <em>#eCommerce</em>, <em>#Databases</em>, <em>#UI</em></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Анімації та переходи: як оживити макет з Figma</h3>
+                    <p>Опубліковано: <time datetime="2026-05-22">22 травня 2026</time></p>
+                </header>
+                <div class="article-content">
+                    <p>Мікроінтеракції роблять веб-додаток "живим". Використання плавних переходів (наприклад, ефекту Push при зміні екранів) суттєво покращує користувацький досвід.</p>
+                </div>
+                <footer>
+                    <p>Теги: <em>#Figma</em>, <em>#Animation</em>, <em>#UX</em></p>
+                </footer>
+            </article>
+
+        </section>
+
+        <aside aria-labelledby="sidebar-title">
+            <h2 id="sidebar-title">Соціальні мережі та віджети</h2>
+            
+            <section class="social-widget">
+                <h3>Слідкуйте за нами</h3>
+                <ul>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                </ul>
+            </section>
+
+            <section class="info-widget">
+                <h3>Популярні теми</h3>
+                <nav aria-label="Меню популярних тем">
+                    <ul>
+                        <li><a href="#">Основи мережевих протоколів</a></li>
+                        <li><a href="#">Адаптивна верстка</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <address>
+            <p>Зв'яжіться зі мною:</p>
+            <p>Email: <a href="mailto:developer@example.com">developer@example.com</a></p>
+            <p>Місто: Київ, Україна</p>
+        </address>
+
+        <div class="copyright">
+            <p><small>&copy; 2026 GamerWeb Dev. Всі права захищено.</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>
